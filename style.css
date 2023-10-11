@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 150vh;
+    max-height: 200vh;
     background-color: hsl(255, 10%, 10%);
     margin: 0;
 }
