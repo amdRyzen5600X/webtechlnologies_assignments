@@ -2,6 +2,9 @@ html{
     font-family: sans-serif;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
     background-color: hsl(255, 10%, 10%);
     margin: 0;
 }
@@ -15,8 +18,13 @@ body::before{
     width: 100%;
     z-index: -1;
 }
+.nav-link{
+    padding: 0;
+}
+.dropdown-menu{
+    z-index: 10;
+}
 .layout_row{
-    width: calc(100% - 351px);
     align-self: center;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +76,9 @@ body::before{
     margin-right: 5px;
 }
 .osu-page{
-    width: calc(100% - 351px);
+    min-width: 900px;
+    max-width: 1000px;
+    width: 100%;
     align-self: center;
     flex: none;
     margin-left: auto;
@@ -213,6 +223,7 @@ body::before{
 .osu-layout_footer{
     background-image: url(./assets/images/page-000.f28663df.png);
     background-size: 500px 500px;
+    min-width: 900px;
     flex: none;
     margin-bottom: 0;
     margin-top: auto;
